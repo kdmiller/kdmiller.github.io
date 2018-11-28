@@ -7,7 +7,20 @@
   <meta name="author" content="Kevin Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/mystyle.css">
-  <script src="/myjs.js"></script>
+  <script type="text/javascript">
+    let i = 0;
+    let introText = 'Hello, world!  I\'m Kevin';
+    let speed = 75;
+
+    function typeWriter () {
+      if (i < introText.length) {
+      document.getElementById('introText').innerHTML += introText.charAt(i);
+      i++;
+    }
+    setTimeout(typeWriter, speed);
+  }
+
+  </script>
 </head>
 
 <nav id="navbar">

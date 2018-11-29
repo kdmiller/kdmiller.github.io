@@ -39,7 +39,7 @@ li a:visited  {
 }
 
 @media (max-width: 700px)  {
-  nav {
+  #navbar {
     padding: 1em;
   }
   nav ul {

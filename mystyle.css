@@ -39,16 +39,17 @@ li a:visited  {
 }
 
 @media (max-width: 700px)  {
-  #navbar {
-    padding: 1em;
-  }
-  nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    line-height: 4vh;
+#navbar {
+  padding: .5em;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 3.8vh;
 }
 }
 
@@ -86,10 +87,31 @@ body  {
   padding: 20em 3em;
 }
 
+#about::before {
+  display: block;
+  content: " ";
+  margin-top: -8em;
+  height: 1.5em;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media(max-width: 900px) {
+  #about::before {
+    margin-top: -10em;
+    height: 1.5em;
+  }
+}
+
 @media(max-width: 700px)  {
   #about  {
     font-size: 20px;
     text-align: justify;
+  }
+
+  #about::before {
+    margin-top: -10em;
+    height: 1.5em;
   }
 }
 
@@ -99,6 +121,11 @@ body  {
     text-align: justify;
     padding: 10em 1em;
   }
+
+  #about::before {
+    margin-top: -5em;
+    height: 5em;
+  }
 }
 
 #projects {
@@ -106,7 +133,6 @@ body  {
   padding: 20em 3em;
   margin: 0 auto;
   text-align: center;
-
 }
 
 #project-header  {
@@ -117,8 +143,9 @@ body  {
 
 .project-tile  {
   display: inline-block;
-  padding: 1em;
+  padding: .7em;
   border: white 2px solid;
+  border-radius: 10%;
   line-height: 25px;
   text-decoration: none;
   color: white;
@@ -138,7 +165,30 @@ body  {
 
 .project-title  {
   border: white 2px solid;
+  border-radius: 10%;
   font-family: 'Poppins', sans-serif;
+}
+
+@media(max-width: 900px) {
+  #projects::before {
+    display: block;
+    content: " ";
+    margin-top: -15em;
+    height: 1.5em;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+@media(max-width: 700px) {
+  #projects::before {
+    display: block;
+    content: " ";
+    margin-top: -13em;
+    height: 1.5em;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 @media(max-width: 450px) {
@@ -150,10 +200,16 @@ body  {
 
 }
 
+#projects::before {
+  margin-top: -5em;
+  height: .5;
+}
+
 .project-tile  {
   display: inline-block;
   padding: 1em;
   border: white 2px solid;
+  border-radius: 10%;
   line-height: 25px;
   text-decoration: none;
   color: white;
@@ -162,9 +218,7 @@ body  {
 }
 
 .project-img  {
-  height: auto;
   width: 275px;
-  opacity: .5;
 }
 
 .project-img:hover  {
@@ -206,7 +260,14 @@ body  {
 }
 
 #contact a:hover  {
-  background-color: #D27434;
+  background-color: #903A00;
+}
+
+@media(max-width: 900px) {
+  #contact::before {
+    margin-top: -18em;
+    height: .5em;
+  }
 }
 
 @media(max-width: 450px) {
@@ -216,6 +277,11 @@ body  {
   padding: 15em 1em;
   text-align: center;
 }
+
+  #contact::before {
+    margin-top: -10em;
+    height: .5em;
+  }
 
   .contact-link {
   display: inline-block;

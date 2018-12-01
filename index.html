@@ -1,28 +1,16 @@
 
+
 <!doctype html>
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Portfolio Page">
-  <meta name="keywords" content="HTML, CSS, Web, Developer">
+  <meta name="keywords" content="HTML, CSS, Web, Developer, Kevin, Miller, KDM, Dev">
   <meta name="author" content="Kevin Miller">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="/mystyle.css">
-  <script type="text/javascript">
-    let i = 0;
-    let introText = 'Hello, world!  I\'m Kevin';
-    let speed = 75;
-
-    function typeWriter () {
-      if (i < introText.length) {
-      document.getElementById('introText').innerHTML += introText.charAt(i);
-      i++;
-    }
-    setTimeout(typeWriter, speed);
-  }
-
-  </script>
+  <title>Kevin Miller | Web Developer Portfolio Page</title>
 </head>
-
+<!-- Fixed Navbar -->
 <nav id="navbar">
   <ul>
     <li><a href="#about">About</a></li>
@@ -31,6 +19,7 @@
   </ul>
 </nav>
 
+<!-- Animated Typewriter Intro At Top Of Page -->
 <div id="welcome-section">
   <h1 id='introText'></h1>
   <p id='underText'>&ltfront-end web developer&gt</p>
@@ -39,6 +28,8 @@
 <body onload='typeWriter()'>
     <p id="about">I've been teaching myself HTML and CSS for a little under half a year and have gained some mild confidence in my abilities thanks to such online resources as freeCodeCamp, Codecademy and Pluralsight.  I aim to treat every project, whether coached by a course or undertaken as a personal/professional endeavor, as a vital learning experience.  I have begun to study some basic Javascript and will continue to improve upon it throughout my entire career just as I will my basic knowledge of HTML and CSS.  My heart is on full-stack web development in the long-term, but I hope that we can make something great together even now as I vigorously pursue more knowledge and practice of front-end web development.
 </p>
+
+<!-- Projects Section -->
   <div id="projects">
     <h2 id="project-header"> What I've done so far:</h2>
     <a class="project-tile" target="_blank" href="https://codepen.io/Kmill92/pen/KGWVNa" alt="project">
@@ -64,7 +55,21 @@
     <a id="profile-link" target="_blank" class="contact-link" href="https://codepen.io/Kmill92/">CodePen</a>
   </div>
 
+<!-- Footer Section -->
   <footer>
     <p>&copy;Kevin Miller 2018.</p>
   </footer>
+
+  <script type="text/javascript">
+    let i = 0;
+    let introText = 'Hello, world!  I\'m Kevin';
+    let speed = 75;
+    function typeWriter () {
+      if (i < introText.length) {
+      document.getElementById('introText').innerHTML += introText.charAt(i);
+      i++;
+    }
+    setTimeout(typeWriter, speed);
+  }
+  </script>
 </body>

@@ -263,9 +263,9 @@ body  {
   background-color: #903A00;
 }
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
   #contact::before {
-    margin-top: -18em;
+    margin-top: -15em;
     height: .5em;
   }
 }
